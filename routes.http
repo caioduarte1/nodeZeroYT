@@ -1,0 +1,28 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title" : "Hello World! 2",
+    "description" : "Esta é minha primeira API rodando na nuvem com banco de dados na nuvem",
+    "duration" : 180
+}
+
+###
+GET http://localhost:3333/videos
+
+###
+GET http://localhost:3333/videos?search=Hello
+
+###
+PUT  http://localhost:3333/videos/f4d9ad36-809b-42a7-9c5c-b76ac204c207
+Content-Type: application/json
+
+{
+    "title" : "Olá Rodrigo",
+    "description" : "A api está rodando na nuvem!",
+    "duration" : 180
+}
+
+###
+DELETE http://localhost:3333/videos/91a700ff-4202-4d60-97fd-cc11e6fa5801
+
